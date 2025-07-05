@@ -10,8 +10,8 @@ const ContactSection: React.FC = () => {
   });
 
   const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
     if (!formData.name || !formData.email || !formData.message) {
-      e.preventDefault();
       alert("Please fill out all fields.");
       return;
     }
