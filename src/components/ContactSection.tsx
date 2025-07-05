@@ -9,15 +9,41 @@ const ContactSection: React.FC = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!formData.name || !formData.email || !formData.message) {
       alert("Please fill out all fields.");
       return;
     }
 
-    setSubmitted(true);
-    setFormData({ name: "", email: "", message: "" });
+    const form = new FormData();
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+    form.append("message", formData.message);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mnnvrklz", {
+        method: "POST",
+        body: form,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        setFormData({ name: "", email: "", message: "" });
+
+        // Optionally hide message after few seconds
+        setTimeout(() => setSubmitted(false), 5000);
+      } else {
+        alert("Failed to send message. Please try again later.");
+      }
+    } catch (error) {
+      alert("Something went wrong. Please try again later.");
+      console.error(error);
+    }
   };
 
   const handleChange = (
@@ -62,13 +88,13 @@ const ContactSection: React.FC = () => {
           {/* Contact Form */}
           <div className="space-y-4 w-full">
             <form
-              action="https://formspree.io/f/mnnvrklz"
-              method="POST"
               onSubmit={handleSubmit}
               className="bg-white rounded-xl shadow-md p-6 space-y-6 border border-gray-200"
             >
               <div>
-                <label className="block text-sm font-medium text-gray-700">Your Name</label>
+                <label className="block text-sm font-medium text-gray-700">
+                  Your Name
+                </label>
                 <input
                   name="name"
                   type="text"
@@ -81,7 +107,9 @@ const ContactSection: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700">Your Email</label>
+                <label className="block text-sm font-medium text-gray-700">
+                  Your Email
+                </label>
                 <input
                   name="email"
                   type="email"
@@ -94,7 +122,9 @@ const ContactSection: React.FC = () => {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-700">Message</label>
+                <label className="block text-sm font-medium text-gray-700">
+                  Message
+                </label>
                 <textarea
                   name="message"
                   rows={4}
