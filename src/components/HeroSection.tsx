@@ -22,7 +22,7 @@ const HeroSection = () => {
         </a>
 
         <a
-          href="https://drive.google.com/file/d/1LIqeVRhUq5Q_VZOY5GiAR8fyN27tSGHY/view" // Update path to your actual CV file
+          href="https://drive.google.com/file/d/1TmqhAjRyyfsxXjWEr6QH35R5fybqDPvf/view" // Update path to your actual CV file
           download
           className="border border-blue-600 text-blue-600 px-6 py-3 rounded-lg hover:bg-blue-600 hover:text-white transition"
         >
