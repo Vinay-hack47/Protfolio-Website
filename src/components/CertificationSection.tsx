@@ -18,7 +18,9 @@ const CertificationSection: React.FC = () => {
             <h3 className="text-xl font-semibold text-indigo-700 mb-1">
               NPTEL – Computer Networks and Internet Protocol
             </h3>
-            <p className="text-xs text-gray-500 mb-2">Issued By: NPTEL, IIT Madras</p>
+            <p className="text-xs text-gray-500 mb-2">
+              Issued By: NPTEL, IIT Madras
+            </p>
 
             <p className="text-sm text-gray-600 mb-4 leading-relaxed">
               Completed an NPTEL course focused on fundamental and advanced
@@ -37,7 +39,27 @@ const CertificationSection: React.FC = () => {
           </div>
 
           {/* Certificate 2 */}
-          
+          <div className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition p-6">
+            <h3 className="text-xl font-semibold text-indigo-700 mb-1">SQL</h3>
+            <p className="text-xs text-gray-500 mb-2">Issued By: LearnTube</p>
+
+            <p className="text-sm text-gray-600 mb-4 leading-relaxed">
+              Successfully completed a certification course on SQL Databases
+              covering core database concepts, data manipulation using SQL
+              queries, and hands-on experience with relational database
+              management systems.
+            </p>
+
+            <a
+              href="https://drive.google.com/file/d/1hVMejnDr87CInyd_RzWxxSRI8XkQ4qzd/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 transition"
+            >
+              View Certificate
+              <ExternalLink className="ml-2 w-4 h-4" />
+            </a>
+          </div>
 
           {/* Certificate 3 */}
           <div className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition p-6">
@@ -67,10 +89,13 @@ const CertificationSection: React.FC = () => {
             <h3 className="text-xl font-semibold text-indigo-700 mb-1">
               Letter of Recommendation
             </h3>
-            <p className="text-xs text-gray-500 mb-2">Issued By: Prodigy InfoTech</p>
+            <p className="text-xs text-gray-500 mb-2">
+              Issued By: Prodigy InfoTech
+            </p>
 
             <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-              Awarded for consistent contributions and exceptional project work during web development internship.
+              Awarded for consistent contributions and exceptional project work
+              during web development internship.
             </p>
 
             <a
