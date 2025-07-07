@@ -61,7 +61,7 @@ const projects: Project[] = [
     ],
     image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=500&h=300&fit=crop",
     codeUrl: "https://github.com/Vinay-hack47/linkedin-clone",
-    liveUrl: "https://linkedin.vinay.live"
+    liveUrl: "https://linkedin-clone-green-omega.vercel.app"
   },
   {
     title: "Job Portal",
