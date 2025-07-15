@@ -84,22 +84,25 @@ const CertificationSection: React.FC = () => {
             </a>
           </div>
 
-          {/* Certificate 4 */}
+
+          {/* Certificate 4 – Object-Oriented Programming in Python */}
           <div className="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-lg transition p-6">
             <h3 className="text-xl font-semibold text-indigo-700 mb-1">
-              Letter of Recommendation
+              Certificate of Participation
             </h3>
             <p className="text-xs text-gray-500 mb-2">
-              Issued By: Prodigy InfoTech
+              Issued By: SkillEcted Campus Program
             </p>
 
             <p className="text-sm text-gray-600 mb-4 leading-relaxed">
-              Awarded for consistent contributions and exceptional project work
-              during web development internship.
+              Completed a comprehensive{" "}
+              <strong>Object-Oriented Programming (OOP) in Python</strong>{" "}
+              bootcamp covering basic-to-advanced concepts including classes,
+              inheritance, polymorphism, and SOLID principles.
             </p>
 
             <a
-              href="https://drive.google.com/file/d/1SJublLQslrnjMczDrwD07ArA5GW4UCfn/view?usp=sharing"
+              href="https://drive.google.com/file/d/1J0t9yLYueMvWgKKfIWhDvzmeGZMm1Eu5/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center text-sm font-medium text-indigo-600 hover:text-indigo-800 transition"

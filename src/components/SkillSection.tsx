@@ -25,7 +25,7 @@ const SkillsSection: React.FC = () => {
             },
             {
               title: 'Frameworks & Libraries',
-              skills: ['MERN Stack', 'Next.js'],
+              skills: ['MERN Stack', 'Knowledge of Next.js'],
             },
             {
               title: 'Databases',
@@ -33,11 +33,11 @@ const SkillsSection: React.FC = () => {
             },
             {
               title: 'Tools',
-              skills: ['Docker', 'GenAI (ChatGPT / OpenAI API)', 'Prisma'],
+              skills: ['Docker', 'GenAI', 'Prisma'],
             },
             {
               title: 'Other Skills',
-              skills: ['Competitive Coding', 'Version Control (Git/GitHub)'],
+              skills: ['Competitive Coding', 'Version Control (Git/GitHub)', 'Object-Oriented Programming'],
             },
           ].map((group, idx) => (
             <div
