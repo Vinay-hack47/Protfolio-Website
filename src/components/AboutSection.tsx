@@ -40,7 +40,7 @@ const AboutSection: React.FC = () => {
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
                   I enjoy turning complex problems into clean, simple, and beautiful solutions. 
-                  Currently pursuing BTech in Computer Science at Parul Institute of Technology with a CGPA of 7.97.
+                  Currently pursuing BTech in Computer Science at Parul Institute of Technology with a CGPA of 7.94.
                 </p>
               </div>
 
