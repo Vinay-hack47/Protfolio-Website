@@ -45,7 +45,7 @@ const experiences: ExperienceItem[] = [
   {
     role: 'Summer Intern – Node.js Developer',
     company: 'Celebal Technologies',
-    duration: '02 Jun, 2025 – Present',
+    duration: '02 Jun, 2025 – 03 August, 2025',
     location: 'Remote',
     keySkills: ['Node.js', 'Express', 'MongoDB', 'RESTful APIs', 'Backend Development'],
     description: [

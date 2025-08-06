@@ -33,7 +33,7 @@ const SkillsSection: React.FC = () => {
             },
             {
               title: 'Tools',
-              skills: ['Docker', 'GenAI', 'Prisma'],
+              skills: ['Docker','Redis', 'GenAI', 'Prisma'],
             },
             {
               title: 'Other Skills',

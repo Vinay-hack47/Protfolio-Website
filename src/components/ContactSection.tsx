@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
+import { Mail, MapPin, Send, CheckCircle } from "lucide-react";
 
 const ContactSection: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -62,13 +62,6 @@ const ContactSection: React.FC = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
           {/* Contact Info */}
           <div className="space-y-6">
-            <div className="flex items-start space-x-4">
-              <Phone className="text-indigo-600 mt-1" />
-              <div>
-                <h4 className="font-semibold text-gray-800">Phone</h4>
-                <p className="text-gray-600 text-sm">+91 9016062778</p>
-              </div>
-            </div>
             <div className="flex items-start space-x-4">
               <Mail className="text-indigo-600 mt-1" />
               <div>

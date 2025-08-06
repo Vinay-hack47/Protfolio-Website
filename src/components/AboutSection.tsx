@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Code, Coffee, Heart } from 'lucide-react';
 
@@ -6,11 +5,11 @@ const AboutSection: React.FC = () => {
   return (
     <section id="about" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50">
       <div className="container mx-auto px-6">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
             About Me
           </h2>
-          
+
           <div className="grid md:grid-cols-2 gap-12 items-center">
             {/* Profile Image */}
             <div className="flex justify-center">
@@ -30,60 +29,51 @@ const AboutSection: React.FC = () => {
 
             {/* Content */}
             <div className="space-y-6">
-              <div>
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">
-                  Hello! I'm <span className="text-blue-600">Vinay Rajput</span>
-                </h3>
-                <p className="text-lg text-gray-600 leading-relaxed mb-4">
-                  A passionate and self-driven <span className="font-semibold text-gray-800">Full Stack Web Developer</span> with 
-                  hands-on experience in modern web technologies like React, Node.js, Express, and MongoDB.
-                </p>
-                <p className="text-lg text-gray-600 leading-relaxed">
-                  I enjoy turning complex problems into clean, simple, and beautiful solutions. 
-                  Currently pursuing BTech in Computer Science at Parul Institute of Technology with a CGPA of 7.94.
-                </p>
-              </div>
+              {/* Summary / Objective */}
+           <div>
+  <h3 className="text-2xl font-bold text-gray-800 mb-4">
+    Hi, I'm <span className="text-blue-600">Vinay Rajput</span>
+  </h3>
+  <p className="text-lg text-gray-600 leading-relaxed mb-4">
+    A tech enthusiast and self-driven <span className="font-semibold text-gray-800">Full Stack Web Developer</span> who loves solving real-world problems through clean, efficient code and intuitive user experiences.
+  </p>
+  <p className="text-lg text-gray-600 leading-relaxed mb-4">
+    With hands-on experience in React, Node.js, Express, and MongoDB, I enjoy building scalable web applications that combine functionality, performance, and aesthetics.
+  </p>
+  <p className="text-lg text-gray-600 leading-relaxed mb-4">
+    I regularly participate in hackathons and coding competitions to refine my problem-solving skills and stay sharp in an ever-evolving tech landscape. I’m passionate about leveraging technology to drive innovation and collaborating on projects that make a real impact.
+  </p>
+  <p className="text-lg text-gray-600 leading-relaxed">
+    In addition to full stack development, I have a growing interest in <span className="font-semibold text-gray-800">Cybersecurity</span>, where I actively explore core concepts and stay updated on industry trends to broaden my technical perspective.
+  </p>
+</div>
 
-              {/* Skills Highlights */}
+
+              {/* Highlights */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-8">
                 <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
                   <Code className="w-6 h-6 text-blue-500" />
                   <div>
                     <p className="font-semibold text-gray-800">Clean Code</p>
-                    <p className="text-sm text-gray-600">Quality focused</p>
+                    <p className="text-sm text-gray-600">Readable, maintainable</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
                   <Coffee className="w-6 h-6 text-purple-500" />
                   <div>
                     <p className="font-semibold text-gray-800">Always Learning</p>
-                    <p className="text-sm text-gray-600">Continuous growth</p>
+                    <p className="text-sm text-gray-600">Curiosity-driven growth</p>
                   </div>
                 </div>
                 <div className="flex items-center space-x-3 p-4 bg-white rounded-lg shadow-sm">
                   <Heart className="w-6 h-6 text-red-500" />
                   <div>
                     <p className="font-semibold text-gray-800">Passionate</p>
-                    <p className="text-sm text-gray-600">Love what I do</p>
+                    <p className="text-sm text-gray-600">Code with heart</p>
                   </div>
                 </div>
               </div>
 
-              {/* Contact Info */}
-              <div className="flex flex-wrap items-center gap-6 text-gray-600 pt-4">
-                <div className="flex items-center space-x-2">
-                  <span>📍</span>
-                  <span>Vadodara, Gujarat</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span>📞</span>
-                  <span>+91 9016062778</span>
-                </div>
-                <div className="flex items-center space-x-2">
-                  <span>📧</span>
-                  <span>rajputvinay1212@gmail.com</span>
-                </div>
-              </div>
             </div>
           </div>
         </div>
