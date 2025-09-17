@@ -2,7 +2,10 @@ import React from 'react';
 
 const SkillsSection: React.FC = () => {
   return (
-    <section id="skills" className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8">
+    <section
+      id="skills"
+      className="bg-gradient-to-br from-gray-50 to-blue-50 py-20 px-4 sm:px-6 lg:px-8"
+    >
       <div className="max-w-5xl mx-auto">
         <h2 className="text-4xl font-bold text-center mb-12 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Skills & Technologies
@@ -21,23 +24,27 @@ const SkillsSection: React.FC = () => {
           {[
             {
               title: 'Languages',
-              skills: ['Python', 'JavaScript', 'TypeScript', 'C', 'Java','SQL'],
+              skills: ['Python', 'JavaScript', 'TypeScript', 'C', 'Java', 'SQL'],
             },
             {
               title: 'Frameworks & Libraries',
-              skills: ['MERN Stack', 'Knowledge of Next.js'],
+              skills: ['MERN Stack', 'Next.js'],
             },
             {
               title: 'Databases',
-              skills: ['MongoDB', 'MYSQL'],
+              skills: ['MongoDB', 'MySQL'],
             },
             {
               title: 'Tools',
-              skills: ['Docker','Redis', 'GenAI', 'Prisma'],
+              skills: ['Docker', 'Redis', 'GenAI', 'Prisma', 'Cloud Computing (AWS)'],
             },
             {
               title: 'Other Skills',
-              skills: ['Competitive Coding', 'Version Control (Git/GitHub)', 'Object-Oriented Programming'],
+              skills: [
+                'Competitive Coding',
+                'Version Control (Git/GitHub)',
+                'Object-Oriented Programming',
+              ],
             },
           ].map((group, idx) => (
             <div

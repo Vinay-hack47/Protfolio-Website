@@ -33,6 +33,10 @@ const certifications = [
     title: "NPTEL – Computer Networks and Internet Protocol",
     issuedBy: "NPTEL, IIT Madras",
   },
+  {
+    title: "Cloud Computing with AWS",
+    issuedBy: "Tutedude",
+  },
 ];
 
 const CertificationSection: React.FC = () => {
